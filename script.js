@@ -1,52 +1,23 @@
-// const lightbox = document.createElement('div')
-// lightbox.id = 'lightbox'
-// document.body.appendChild(lightbox)
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
-// const videos = document.querySelectorAll('iframe')
-// videos.forEach(videos => {
-//     videos.addEventListener('click', e => {
-//         lightbox.classList.add('active')
-//         const vid = document.createElement('iframe')
-//         vid.src = iframe.src
-//         while (lightbox.firstChild) {
-//             lightbox.removeChild(lightbox.firstChild)
-//         }
-//         lightbox.appendChild(vid)
-//     })
-// })
+    burger.addEventListener('click', () => {
+        //toggle nav
+        nav.classList.toggle('nav-active');
+        //animate links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+    
+}
 
-
-// lightbox.addEventListener('click', e => {
-//     if (e.target !== e.currentTarget) return
-//     lightbox.classList.remove('active')
-// })
-
-// function changeNavbarColor(){
-//     var scrollValue = window.screenY;
-//     console.log(scrollValue)
-// }
-
-// window.addEventListener('scroll', changeNavbarColor)
-
-// const body = document.body;
-// let lastScroll = 0;
-
-// window.addEventListener("scroll", () => {
-// 	const currentScroll = window.pageYOffset;
-// 	if (currentScroll <= 0) {
-// 		body.classList.remove("scroll-up");
-// 		return;
-// 	}
-
-// 	if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-// 		body.classList.remove("scroll-up");
-// 		body.classList.add("scroll-down");
-// 	} else if (
-// 		currentScroll < lastScroll &&
-// 		body.classList.contains("scroll-down")
-// 	) {
-// 		body.classList.remove("scroll-down");
-// 		body.classList.add("scroll-up");
-// 	}
-// 	lastScroll = currentScroll;
-// });
+navSlide();

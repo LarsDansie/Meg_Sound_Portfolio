@@ -11,34 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    
 
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="logo-box">
-                <a href="/" class="logo">Meg Mordecai</a>
+        <nav>
+            <div class="logo">
+                <a href="/">Meg Mordecai</a>
             </div>
-            <nav>
-                <ul class="primary-navigation flex">
-                    <li>
-                        <a href="#main">Reel</a>
-                    </li>
-                    <li>
-                        <a href="#sound-design">Sound Design</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#main">Reel</a>
+                </li>
+                <li>
+                    <a href="#sound-design">Sound Design</a>                    </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
     <section id="main" class="reel">
@@ -48,76 +49,72 @@
                 height="315" 
                 src="https://www.youtube.com/embed/NkFrnFooMgk" 
                 title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                frameborder="0"  
                 allowfullscreen>
             </iframe>
 
         </div>
     </section>
 
-    <section id="sound-design">
+    <section class="between-white">
         <div class="custom-shape-divider-top-1658965090">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
             </svg>
         </div>
-        </div>
-        <div class="grid">
+    </section>
+
+    <section id="sound-design">
+        <div class="video-grid">
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/NkFrnFooMgk" 
+                src="https://www.youtube.com/embed/Gl2TEwnacwM" 
                 title="YouTube video player" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/NkFrnFooMgk" 
+                src="https://www.youtube.com/embed/y7FauV3MIUU" 
                 title="YouTube video player" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/NkFrnFooMgk" 
+                src="https://www.youtube.com/embed/nqlk9_gfMJg" 
                 title="YouTube video player" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/NkFrnFooMgk" 
+                src="https://www.youtube.com/embed/6CVITRdi9yE" 
                 title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                frameborder="0"  
                 allowfullscreen>
             </iframe>
         </div>
     </section>
 
-    <section id="about">
+    <section class="between">
         <div class="custom-shape-divider-top-1658964980">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
             </svg>
         </div>
-        <h1>About me</h1>
-        <img src="./photos/20191112_203813.jpg" alt="big dumb bozo" class="responsive-img">
-        <h3>Hi! I'm Meg Mordecai, a senior in the Honors College at the University of Utah. I became interested in sound design after I got a recommendation on YouTube to watch Riot Games' cinematic, “A New Dawn," in 2014. I then decided to minor in music technology while majoring in Game Design at the University of Utah, and all of my music technology classes became my instant favorites. I think sound design is an excellent balance between my creative talents and my more mechanically-oriented, engineering skills.
+    </section>
 
-        In my free time, I love figure skating, playing guitar, reading, and playing games with my friends!</h3>
-        <div class="custom-shape-divider-bottom-1658963072">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
+    <section id="about">
+        
+        <div class="about-grid">
+            <h1>About me</h1>
+            <img src="./photos/20191112_203813.jpg" alt="big dumb bozo" class="responsive-img">
+            <h3>Hi! I'm Meg Mordecai, a senior in the Honors College at the University of Utah. I became interested in sound design after I got a recommendation on YouTube to watch Riot Games' cinematic, “A New Dawn," in 2014. I then decided to minor in music technology while majoring in Game Design at the University of Utah, and all of my music technology classes became my instant favorites. I think sound design is an excellent balance between my creative talents and my more mechanically-oriented, engineering skills. In my free time, I love figure skating, playing guitar, reading, and playing games with my friends!</h3>
         </div>
     </section>
     
@@ -128,9 +125,8 @@
             </svg>
         </div>
         <h1>Let's get in contact!</h1>
-        <p>Alias veniam quis totam omnis culpa aliquid quas, voluptates mollitia aperiam sapiente reprehenderit nisi labore itaque, inventore eum molestias incidunt asperiores soluta suscipit iure, fugit consequatur non. Rem, temporibus voluptatum?</p>
     </section>
-
+    <script src="script.js"></script>
     <script>
 
         const body = document.body;
