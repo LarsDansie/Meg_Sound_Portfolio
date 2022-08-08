@@ -61,18 +61,19 @@ a {
     min-height: 110vh;
     padding-top: 10vh;
     padding-bottom: 0;
-
 }
 
-#about h1 {
-    margin: 0 auto;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
-#about img {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.about-text {
+    padding-right: 3vw;
+    font-size: 1.1vw;
+    line-height: 2em;
 }
 
 #contact {
@@ -102,8 +103,9 @@ nav{
 }
 
 .logo a:hover {
-    font-size: 1.15rem;
-    transform: translateY(-5px)
+    font-size: 1.12rem;
+    transform: translateY(-5px);
+    color:#ab91bc;
 }
 
 .nav-links {
@@ -124,8 +126,9 @@ nav{
 }
 
 .nav-links a:hover {
-    font-size: 1.15rem;
-    transform: translateY(-5px)
+    font-size: 1.12rem;
+    transform: translateY(-5px);
+    color:#ab91bc;
 }
 
 .burger {
@@ -143,6 +146,9 @@ nav{
 @media screen and (max-width:1090px) {
     .nav-links{
         width: 50%;
+    }
+    .about-text {
+        font-size: 1.5vw;
     }
 }
 
@@ -168,10 +174,6 @@ nav{
         background-color: #000;
         border-left-width: .2em;
         border-left-style: solid;
-        /* border-top-color: #EEE;
-        border-top-width: .2em;
-        border-top-style: solid;
-        border-top-color: #EEE; */
         border-bottom-width: .2em;
         border-bottom-style: solid;
         border-bottom-color: #EEE;
@@ -189,6 +191,10 @@ nav{
     .burger {
         display: block;
         cursor: pointer;
+    }
+
+    .about-text {
+        font-size: 1.8vw;
     }
 }
 
@@ -250,13 +256,15 @@ nav{
 }
 
 .video-grid iframe {
-    width: 2fr;
-    height: 2fr;
     cursor: pointer;
     padding: .3em;
     border-style: solid;
     border-width: .3em;
     border-color: #000;
+}
+
+.box-content {
+    color: #000;
 }
 
 iframe {
@@ -269,19 +277,6 @@ iframe {
     }
 }
 
-.about-grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-areas: 
-    'one'
-    'two'
-    'three';
-    
-    padding-block: 2rem;
-    width: min(95%, 70rem);
-    margin-inline: auto;
-}
-
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -290,8 +285,9 @@ iframe {
 
 .responsive-img {
     width: 100%;
-    max-width:20vw;
     height: auto;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /* scroll stuff */
