@@ -24,5 +24,4 @@ const navSlide = () => {
 
 navSlide();
 
-
-
+document.cookie = 'cookie2=value2; SameSite=None; Secure';
