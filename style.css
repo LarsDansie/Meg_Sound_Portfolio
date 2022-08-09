@@ -73,7 +73,6 @@ a {
 .about-text {
     padding-right: 3vw;
     font-size: 1.1rem;
-    line-height: 2em;
     max-width: 50%;
 }
 
@@ -107,6 +106,15 @@ a {
     .about-list-playing {
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-text h3 {
+        font-size: .8rem;
+    }
+    .about-below-text {
+        font-size: .8rem;
     }
 }
 
@@ -218,7 +226,7 @@ nav{
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 60vh;
         top: 8vh;
         background-color: #000;
         border-left-width: .2em;
@@ -366,7 +374,6 @@ iframe {
     object-position: bottom;
     max-width: 500px;
     max-width: 316px;
-    padding-left: 4rem;
 }
 
 /* scroll stuff */
