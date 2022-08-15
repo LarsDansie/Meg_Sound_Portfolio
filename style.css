@@ -50,16 +50,17 @@ a {
     min-height: 90vh;
 }
 
-.main-logo {
+.main-name {
     display: flex;
     padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    color: #EEE;
+    
+    font-family: 'Barlow', sans-serif;
 }
 
-.main-logo h2 {
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: #EEE;
-}
+
 
 #sound-design {
     background-color: #EEE;
