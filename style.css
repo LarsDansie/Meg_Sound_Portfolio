@@ -181,6 +181,12 @@ nav{
     padding-top: .5rem;
 }
 
+@media screen and (max-width:768px) {
+    nav {
+        padding-top: 0;
+    }
+}
+
 .logo {
     color: #EEE;
     text-transform: uppercase;
@@ -475,9 +481,7 @@ mark.purple {
     
     .scroll-up .nav-links {
         background-color: #ab91bc;
-        border: none;
-        transform: translateX(100%);
-        transition: transeform 0.2 ease-in;
+        border-color: #000;
     }
     .scroll-down .nav-links {
         border: none;
