@@ -3,10 +3,17 @@
     padding: 0px;
 }
 
+/* Font stuff  */
+
+@font-face {
+    font-family: customFont;
+    src: url(/Fonts/Bebas_Neue_Pro_Middle_Middle/Bebas\ Neue\ Pro\ Middle.ttf);
+}
+
 /* Body stuff */
 
 body {
-    font-family: 'Mulish', sans-serif;
+    font-family: customFont;
     color: white;
     background-color: #000;
 }
@@ -57,8 +64,6 @@ a {
     font-size: 2.5vw;
     color: #EEE;
     letter-spacing: .6rem;
-    
-    font-family: 'Barlow', sans-serif;
 }
 
 
@@ -260,6 +265,7 @@ nav{
 }
 
 .nav-links a {
+    font-size: 1.3rem;
     color: #EEE;
     text-decoration: none;
     letter-spacing: 3px;
@@ -267,7 +273,7 @@ nav{
 }
 
 .nav-links a:hover {
-    font-size: 1.12rem;
+    font-size: 1.5rem;
     transform: translateY(-5px);
     color:#ab91bc;
 }
@@ -287,6 +293,9 @@ nav{
 @media screen and (max-width:1090px) {
     .nav-links{
         width: 50%;
+    }
+    .nav-links a {
+        font-size: 1rem;
     }
     .about-text {
         font-size: 1.5vw;
@@ -435,7 +444,7 @@ nav{
 }
 
 .box-content p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     max-width: 500px;
 }
 
