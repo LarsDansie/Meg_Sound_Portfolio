@@ -134,9 +134,31 @@ a {
     padding-left: 1.8rem;
 }
 
+.about-list-fav {
+    padding-right: 8rem;
+}
+
+.about-list-fav ul {
+    padding-top: .6rem;
+    padding-left: 1.8rem;
+}
+
+@media screen and (max-width:1090px) {
+    .about-list-playing {
+        padding-left: 5vw;
+        padding-right: 3rem;
+    }
+    .about-list-fav {
+        padding-right: 0;
+    }
+}
+
 @media screen and (max-width:768px) {
     .about-list-playing {
         padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .about-list-fav {
         padding-left: 2rem;
     }
     .about-content {
@@ -151,7 +173,7 @@ a {
         font-size: .8rem;
     }
     .about-below-text {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 
