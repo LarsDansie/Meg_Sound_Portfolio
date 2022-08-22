@@ -115,7 +115,7 @@ a {
 
 .about-text {
     padding-right: 3vw;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     max-width: 50%;
 }
 
@@ -129,6 +129,7 @@ a {
 
 .about-text h3 {
     padding-bottom: 2rem;
+    line-height: 1.8rem;
 }
 
 .about-below-text {
@@ -186,6 +187,7 @@ a {
     }
     .about-text h3 {
         font-size: .8rem;
+        line-height: 1rem;
     }
     .about-below-text {
         font-size: 1rem;
