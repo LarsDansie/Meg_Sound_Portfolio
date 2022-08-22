@@ -70,13 +70,20 @@ a {
 }
 
 .sound-design-title {
-    font-size: 2.8rem;
+    font-size: 5.3vw;
     color: #000;
     margin-bottom: 3rem;
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .6rem;
 }
+
+@media screen and (max-width:768px) {
+    .sound-design-title {
+        font-size: 5.3vw;
+    }
+}
+
 
 #about {
     background-color: #000;
@@ -86,7 +93,7 @@ a {
 }
 
 .about-title {
-    font-size: 4.6rem;
+    font-size: 5vw;
     color: #ab91bc;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -154,6 +161,9 @@ a {
 }
 
 @media screen and (max-width:768px) {
+    .about-title {
+        font-size: 7vw;
+    }
     .about-list-playing {
         padding-right: 2rem;
         padding-left: 2rem;
@@ -296,7 +306,7 @@ nav{
         padding-right: 6vw;
         padding-bottom: 2vh;
         padding-top: 12vh;
-        min-height: 45vh;
+        min-height: 60vh;
     }
     body {
         overflow-x: hidden;
@@ -453,8 +463,7 @@ iframe {
     height: auto;
     object-fit: cover;
     object-position: bottom;
-    /* max-width: 500px;
-    max-width: 316px; */
+    max-width: 580px;
 }
 
 
