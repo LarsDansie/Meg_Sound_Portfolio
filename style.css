@@ -10,12 +10,32 @@
     src: url(/Fonts/Bebas_Neue_Pro_Middle_Middle/Bebas\ Neue\ Pro\ Middle.ttf);
 }
 
+/* @font-face {
+    font-family: ;
+    src: url(/Fonts/);
+} */
+
+:root {
+
+    /* colors */
+    --black: #000;
+    --white: #EEE;
+    --light-purple: #ab91bc;
+
+    /* fonts */
+    --main-font: customFont;
+}
+
+[data-theme="jinx"] {
+    --jinx-font: ;
+}
+
 /* Body stuff */
 
 body {
     font-family: customFont;
-    color: white;
-    background-color: #000;
+    color: var(--white);
+    background-color: var(--black);
 }
 html{
     scroll-behavior: smooth;
@@ -36,7 +56,7 @@ section.between {
 section.between-white {
     padding: 0;
     min-height: 20vh;
-    background-color: #EEE;
+    background-color: var(--white);
 }
 
 header {
@@ -61,22 +81,23 @@ a {
     display: flex;
     padding-bottom: 1rem;
     text-transform: uppercase;
+    font-family: customFont;
     font-size: 2.8vw;
-    color: #ab91bc;
+    color: var(--light-purple);
     letter-spacing: .6rem;
 }
 
 
 
 #sound-design {
-    background-color: #EEE;
+    background-color: var(--white);
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
 .sound-design-title {
     font-size: 2.8vw;
-    color: #000;
+    color: var(--black);
     margin-bottom: 3rem;
     text-transform: uppercase;
     margin-top: 0;
@@ -91,7 +112,7 @@ a {
 
 
 #about {
-    background-color: #000;
+    background-color: var(--black);
     min-height: 90vh;
     padding-top: 10vh;
     padding-bottom: 0;
@@ -99,7 +120,7 @@ a {
 
 .about-title {
     font-size: 2.8vw;
-    color: #ab91bc;
+    color: var(--light-purple);
     margin-bottom: 1rem;
     text-transform: uppercase;
     margin-top: 0;
@@ -193,8 +214,8 @@ a {
 }
 
 #contact {
-    background-color: #EEE;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
     height: 20vh;
     padding: 20vh 20vw;
 }
@@ -225,21 +246,21 @@ nav{
 }
 
 .logo {
-    color: #EEE;
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .logo a {
     text-decoration: none;
-    color: #EEE;
+    color: var(--white);
     transition: 0.5s;
 }
 
 .logo a:hover {
     font-size: 1.12rem;
     transform: translateY(-5px);
-    color:#ab91bc;
+    color:var(--light-purple);
 }
 
 .logo-img {
@@ -266,7 +287,7 @@ nav{
 
 .nav-links a {
     font-size: 1.3rem;
-    color: #EEE;
+    color: var(--white);
     text-decoration: none;
     letter-spacing: 3px;
     transition: 0.5s;
@@ -275,7 +296,7 @@ nav{
 .nav-links a:hover {
     font-size: 1.5rem;
     transform: translateY(-5px);
-    color:#ab91bc;
+    color: var(--light-purple);
 }
 
 .burger {
@@ -285,7 +306,7 @@ nav{
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #EEE;
+    background-color: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -328,12 +349,12 @@ nav{
         right: 0px;
         height: 60vh;
         top: 8vh;
-        background-color: #000;
+        background-color: var(--black);
         border-left-width: .2em;
         border-left-style: solid;
         border-bottom-width: .2em;
         border-bottom-style: solid;
-        border-bottom-color: #EEE;
+        border-bottom-color: var(--white);
 
         display: flex;
         flex-direction: column;
@@ -400,7 +421,7 @@ nav{
     height: 100%;
     border-style: solid;
     border-width: .3em;
-    border-color: #EEE;
+    border-color: var(--white);
   }
 
 @media screen and (max-width:1090px) {
@@ -423,11 +444,11 @@ nav{
     padding: .3em;
     border-style: solid;
     border-width: .3em;
-    border-color: #000;
+    border-color: var(--black);
 }
 
 .box-content {
-    color: #000;
+    color: var(--black);
     max-width: 560px;
 }
 
@@ -479,7 +500,7 @@ iframe {
 /* mark stuff */
 
 mark.purple {
-    color: #ab91bc;
+    color: var(--light-purple);
     background: none;
 }
 
@@ -493,17 +514,17 @@ mark.purple {
     transform: translate3d(0, 0, -100%);
 }
 .scroll-up .nav-links a:hover {
-    color: #EEE;
+    color: var(--white);
 }
 
 .scroll-up header {
     filter: drop-shadow(0 -10px 20px rgb(252, 161, 255));
-    background: #ab91bc;
-    color: #000;
+    background: var(--light-purple);
+    color: var(--black);
 }
 
 .scroll-up nav a {
-    color: #000
+    color: var(--black);
 }
 
 .scroll-up .logo-img {
@@ -511,7 +532,7 @@ mark.purple {
 }
 
 .scroll-down .logo {
-    color: #EEE
+    color: var(--white);
 }
 
 @media screen and (max-width:768px) {
@@ -520,8 +541,8 @@ mark.purple {
     }
     
     .scroll-up .nav-links {
-        background-color: #ab91bc;
-        border-color: #000;
+        background-color: var(--light-purple);
+        border-color: var(--light-purple);
     }
     .scroll-down .nav-links {
         border: none;
@@ -541,7 +562,7 @@ mark.purple {
 {
     width: 6rem;
     height: 6rem;
-    background-color: #000;
+    background-color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
