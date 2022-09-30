@@ -139,6 +139,7 @@ a {
 }
 
 .hourglass-doodles {
+    display: none;
     position: absolute;
     top: -5vh;
     left: -8vw;
@@ -184,7 +185,7 @@ a {
 }
 
 .m-doodle {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 5.5vh;
     left: 52.5vw;
@@ -685,7 +686,9 @@ mark.purple {
 .jinxMode .me-doodle, 
 .jinxMode .monkey-2-doodle, 
 .jinxMode .jinxmodetext,
-.jinxMode .haha-1-doodles {
+.jinxMode .haha-1-doodles,
+.jinxMode .m-doodle,
+.jinxMode .hourglass-doodles {
     display: block;
 }
 
