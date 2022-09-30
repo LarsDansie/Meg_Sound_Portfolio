@@ -105,7 +105,7 @@ a {
     height: auto;
     width: 10%;
     transform: rotate(35deg);
-    z-index: 99999;
+    z-index: 999;
 }
 
 .monkey-2-doodle {
@@ -115,7 +115,7 @@ a {
     left: 18vw;
     height: auto;
     width: 8%;
-    z-index: 9999;
+    z-index: 999;
 
 }
 
@@ -124,7 +124,7 @@ a {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--name-font);
-    font-size: 2.8vw;
+    font-size: 3.2vw;
     color: var(--main-color);
     letter-spacing: .6rem;
     transition: all 1.5 ease-in-out;
@@ -137,17 +137,17 @@ a {
 
 #sound-design {
     background-color: var(--white);
-    padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
 .sound-design-title {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
     color: var(--black);
     margin-bottom: 3rem;
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .6rem;
+    padding-bottom: 3rem;
 }
 
 @media screen and (max-width:768px) {
@@ -160,17 +160,16 @@ a {
 #about {
     background-color: var(--black);
     min-height: 90vh;
-    padding-top: 10vh;
-    padding-bottom: 0;
 }
 
 .about-title {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
     color: var(--main-color);
     margin-bottom: 1rem;
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .6rem;
+    padding-bottom: 5vh;
     
 }
 
@@ -179,7 +178,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
 }
 
 .bg-me-img {
@@ -192,16 +190,15 @@ a {
 }
 
 .about-text {
-    text-align: left;
     padding-right: 3vw;
     font-size: 1.3rem;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 
 .about-text h2 {
     padding-bottom: 2rem;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
 }
 
 .about-below-text {
@@ -270,13 +267,13 @@ a {
 }
 
 .contact-text {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 1.5em;
 }
 
 @media screen and (max-width:768px) {
     .contact-text {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 }
 
@@ -315,14 +312,14 @@ nav{
 }
 
 .logo-img {
-    max-width: 2.5rem;
-    max-height: 2.5rem;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
     transition: 0.8s ease-in-out;
 }
 
 .logo-img:hover {
-    max-width: 3rem;
-    max-height: 3rem;
+    max-width: 4rem;
+    max-height: 4rem;
     transform: rotate(-360deg)
 }
 
@@ -337,7 +334,7 @@ nav{
 }
 
 .nav-links a {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: var(--white);
     text-decoration: none;
     letter-spacing: 3px;
@@ -345,7 +342,7 @@ nav{
 }
 
 .nav-links a:hover {
-    font-size: 1.5rem;
+    font-size: 2rem;
     transform: translateY(-5px);
     color: var(--main-color);
 }
@@ -502,11 +499,10 @@ nav{
     display: none;
     position: absolute;
     top: 35vh;
-    right: 0;
+    left: 80vw;
     height: auto;
-    width: 20%;
-    transform: rotate(30deg);
-    z-index: 9999;
+    width: 15%;
+    z-index: 999;
   }
 
 @media screen and (max-width:1090px) {
@@ -514,14 +510,14 @@ nav{
 }
 
 
-
+/* video css  */
 
 .video-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .video-grid iframe {
@@ -534,23 +530,23 @@ nav{
 
 .box-content {
     color: var(--black);
-    max-width: 560px;
+    /* max-width: 560px; */
 }
 
 .box-content h2 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     padding-bottom: .3rem;
     text-transform: uppercase;
 }
 
 .box-content h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: .3rem;
     text-transform: uppercase;
 }
 
 .box-content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     max-width: 500px;
 }
 
@@ -590,7 +586,7 @@ iframe {
     display: none;
     position: absolute;
     top: -15vh;
-    left: 30vw;
+    left: 22vw;
     max-height: 35vh;
     z-index: 5;
 }
@@ -661,7 +657,7 @@ mark.purple {
     background-image: url(./photos/jinx-doodles/BLAH\ BLAH.png);
     background-repeat: no-repeat;
     background-size: 20vh;
-    background-position: 70%;
+    background-position: 68%;
 }
 
 .jinxMode .me-doodle, 
