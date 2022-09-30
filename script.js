@@ -24,14 +24,13 @@ const navSlide = () => {
 
 navSlide();
 
+
+// navbar scrolling stuff
 const body = document.body;
         let lastScroll = 0;
 
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset
-            // if (currentScroll <= 140) {
-            //     body.classList.add('scroll-up')
-            // }
             if (currentScroll <= 0) {
                 body.classList.remove("scroll-up")
             }
@@ -50,4 +49,34 @@ const body = document.body;
             lastScroll = currentScroll
         })
 
-document.cookie = 'cookie2=value2; SameSite=None; Secure';
+// document.cookie = 'cookie2=value2; SameSite=None; Secure';
+
+
+
+
+//monkey svg checkbox stuff / jinx mode
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'jinx');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'default');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+// toggle monkey svg on / off class
+
+function jinxMode(e) {
+    if (e.target.checked) {
+        body.classList.add("jinxMode")
+    } else {
+        body.classList.remove("jinxMode")
+    }
+}
+
+toggleSwitch.addEventListener('change', jinxMode, false);

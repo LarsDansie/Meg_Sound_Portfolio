@@ -10,10 +10,10 @@
     src: url(/Fonts/Bebas_Neue_Pro_Middle_Middle/Bebas\ Neue\ Pro\ Middle.ttf);
 }
 
-/* @font-face {
-    font-family: ;
-    src: url(/Fonts/);
-} */
+@font-face {
+    font-family: jinxFont;
+    src: url(/Fonts/streaker-freaker-font/Streakerfreaker-Rp08e.otf);
+}
 
 :root {
 
@@ -21,13 +21,16 @@
     --black: #000;
     --white: #EEE;
     --light-purple: #ab91bc;
+    --navbar: #ab91bc;
 
     /* fonts */
     --main-font: customFont;
+    --name-font: customFont;
 }
 
 [data-theme="jinx"] {
-    --jinx-font: ;
+    --name-font: jinxFont;
+    --navbar: #00C5E2;
 }
 
 /* Body stuff */
@@ -81,10 +84,11 @@ a {
     display: flex;
     padding-bottom: 1rem;
     text-transform: uppercase;
-    font-family: customFont;
+    font-family: var(--name-font);
     font-size: 2.8vw;
     color: var(--light-purple);
     letter-spacing: .6rem;
+    transition: all 1.5 ease-in-out;
 }
 
 
@@ -233,7 +237,7 @@ a {
 
 nav{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     min-height: 8vh;
     padding-top: .5rem;
@@ -249,6 +253,8 @@ nav{
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 3px;
+    padding-left: 15vw;
+    padding-right: 40vw;
 }
 
 .logo a {
@@ -298,6 +304,29 @@ nav{
     transform: translateY(-5px);
     color: var(--light-purple);
 }
+
+/** monkey btn checkbox stuff **/
+
+.monkey-btn {
+    height: 4rem;
+    filter: grayscale(80%);
+    transition: filter .5s ease-in-out;
+}
+
+.monkey-btn:hover {
+    filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B );
+}
+
+.monkey-btn:active {
+    transform: translateY(3px);
+}
+
+
+.theme-switch input {
+    display:none;
+}
+
+/* burger bar stuff */
 
 .burger {
     display: none;
@@ -518,8 +547,8 @@ mark.purple {
 }
 
 .scroll-up header {
-    filter: drop-shadow(0 -10px 20px rgb(252, 161, 255));
-    background: var(--light-purple);
+    filter: drop-shadow(0 -10px 20px var(--navbar));
+    background: var(--navbar);
     color: var(--black);
 }
 
@@ -541,14 +570,21 @@ mark.purple {
     }
     
     .scroll-up .nav-links {
-        background-color: var(--light-purple);
-        border-color: var(--light-purple);
+        background-color: var(--navbar);
+        border-color: var(--navbar);
     }
     .scroll-down .nav-links {
         border: none;
         transform: translateX(100%);
         transition: transeform 0.2 ease-in;
     }
+}
+
+
+/* Jinx Mode stuff  */
+
+.jinxMode .monkey-btn {
+    filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B);
 }
 
 .contact-btn-container{
@@ -690,3 +726,6 @@ mark.purple {
         height: 116px;
     }
 }
+
+
+  
