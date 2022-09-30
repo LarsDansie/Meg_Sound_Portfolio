@@ -40,6 +40,7 @@ body {
     font-family: customFont;
     color: var(--white);
     background-color: var(--black);
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -88,9 +89,8 @@ a {
 
 
 #main {
-    padding: 15vh 20vw;
-    padding-bottom: 0;
-    min-height: 90vh;
+    padding: 10vh 18vw;
+    padding-bottom: 5vh;
 }
 
 .main-top {
@@ -100,21 +100,22 @@ a {
 .jinxmodetext {
     display: none;
     position: absolute;
-    top: 2vh;
-    left: 28vw;
+    top: 6vh;
+    left: 18vw;
     height: auto;
     width: 10%;
-    transform: rotate(35deg);
     z-index: 999;
+    transform: rotate(35deg);
 }
 
 .monkey-2-doodle {
     display: none;
     position: absolute;
-    top: 8vh;
-    left: 18vw;
+    top: 1vh;
+    left: 28vw;
     height: auto;
-    width: 8%;
+    width: 5%;
+    /* transform: rotate(deg); */
     z-index: 999;
 
 }
@@ -124,13 +125,10 @@ a {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--name-font);
-    font-size: 3.2vw;
+    font-size: 3vw;
     color: var(--main-color);
     letter-spacing: .6rem;
     transition: all 1.5 ease-in-out;
-    /* background-image: url(./photos/jinx-doodles/JINX\ MODE.png);
-    background-repeat: no-repeat;
-    background-size: 35vh; */
 }
 
 
@@ -140,8 +138,17 @@ a {
     padding-bottom: 5vh;
 }
 
+.hourglass-doodles {
+    position: absolute;
+    top: -5vh;
+    left: -8vw;
+    transform: rotate(-40deg);
+    height: auto;
+    width: 40%;
+}
+
 .sound-design-title {
-    font-size: 3.2vw;
+    font-size: 3vw;
     color: var(--black);
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -149,6 +156,7 @@ a {
     letter-spacing: .6rem;
     padding-bottom: 3rem;
 }
+
 
 @media screen and (max-width:768px) {
     .sound-design-title {
@@ -160,6 +168,7 @@ a {
 #about {
     background-color: var(--black);
     min-height: 90vh;
+    padding-bottom: 5vh;
 }
 
 .about-title {
@@ -169,8 +178,20 @@ a {
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .6rem;
+    padding-top: 5vh;
     padding-bottom: 5vh;
     
+}
+
+.m-doodle {
+    /* display: none; */
+    position: absolute;
+    top: 5.5vh;
+    left: 52.5vw;
+    transform: rotate(10deg);
+    height: auto;
+    width: 4.1%;
+    z-index: 999;
 }
 
 
@@ -178,15 +199,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.bg-me-img {
-    padding: 30vh;
-    background-image: url(./photos/meg_desk.png);
-    max-width: 80%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center right;
+    padding-bottom: 5vh;
 }
 
 .about-text {
@@ -212,11 +225,13 @@ a {
 }
 
 .about-list-playing ul {
+    font-size: 1.6rem;
     padding-top: .6rem;
     padding-left: 1.8rem;
 }
 
 .about-list-fav ul {
+    font-size: 1.6rem;
     padding-top: .6rem;
     padding-left: 1.8rem;
 }
@@ -312,14 +327,14 @@ nav{
 }
 
 .logo-img {
-    max-width: 3.5rem;
-    max-height: 3.5rem;
+    max-width: 3.8rem;
+    max-height: 3.8rem;
     transition: 0.8s ease-in-out;
 }
 
 .logo-img:hover {
-    max-width: 4rem;
-    max-height: 4rem;
+    max-width: 4.5rem;
+    max-height: 4.5rem;
     transform: rotate(-360deg)
 }
 
@@ -350,7 +365,7 @@ nav{
 /** monkey btn checkbox stuff **/
 
 .monkey-btn {
-    height: 4rem;
+    height: 5rem;
     filter: grayscale(80%);
     transition: filter .5s ease-in-out;
 }
@@ -483,6 +498,7 @@ nav{
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
+    z-index: 9995;
   }
   .reel-container iframe {
     position: absolute;
@@ -499,7 +515,7 @@ nav{
     display: none;
     position: absolute;
     top: 35vh;
-    left: 80vw;
+    left: 82vw;
     height: auto;
     width: 15%;
     z-index: 999;
@@ -518,6 +534,7 @@ nav{
     justify-content: center;
     align-content: center;
     gap: 3rem;
+    z-index: 100;
 }
 
 .video-grid iframe {
@@ -578,16 +595,21 @@ iframe {
 .desk-meg-img {
     width: 100%;
     height: auto;
-    max-width: 580px;
+    max-width: 800px;
     z-index: 4;
+    padding: .3em;
+    border-style: solid;
+    border-width: .3em;
+    border-color: var(--main-color); 
 }
 
 .me-doodle {
     display: none;
     position: absolute;
-    top: -15vh;
-    left: 22vw;
-    max-height: 35vh;
+    top: -25vh;
+    left: 31vw;
+    height: 40vh;
+    transform: rotate(5deg);
     z-index: 5;
 }
 
