@@ -115,7 +115,6 @@ a {
     left: 18vw;
     height: auto;
     width: 8%;
-    /* transform: rotate(15deg); */
     z-index: 9999;
 
 }
@@ -499,6 +498,17 @@ nav{
     border-color: var(--white);
   }
 
+  .haha-1-doodles {
+    display: none;
+    position: absolute;
+    top: 35vh;
+    right: 0;
+    height: auto;
+    width: 20%;
+    transform: rotate(30deg);
+    z-index: 9999;
+  }
+
 @media screen and (max-width:1090px) {
    
 }
@@ -656,7 +666,8 @@ mark.purple {
 
 .jinxMode .me-doodle, 
 .jinxMode .monkey-2-doodle, 
-.jinxMode .jinxmodetext{
+.jinxMode .jinxmodetext,
+.jinxMode .haha-1-doodles {
     display: block;
 }
 
