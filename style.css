@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: jinxFont;
-    src: url(/Fonts/streaker-freaker-font/Streakerfreaker-Rp08e.otf);
+    src: url(/Fonts/Jinxfont2.0.otf);
 }
 
 :root {
@@ -151,11 +151,11 @@ a {
 .boom-doodle {
     display: none;
     position: absolute;
-    top: -13vh;
+    top: -12vh;
     left: 32vw;
     height: auto;
     width: 45%;
-    z-index: 95;
+    transform: rotate(5deg);
 }
 
 .sound-design-title {
@@ -166,7 +166,7 @@ a {
     margin-top: 0;
     letter-spacing: .6rem;
     padding-bottom: 3rem;
-    z-index: 99;
+    z-index: 9990;
 }
 
 
@@ -716,6 +716,11 @@ mark.purple {
 
 .jinxMode .monkey-btn {
     filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B);
+}
+
+.jinxMode .main-name {
+    font-size: 2.8vw;
+    letter-spacing: 0.2rem;
 }
 
 .jinxMode #contact {
