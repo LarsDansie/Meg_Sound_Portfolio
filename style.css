@@ -381,7 +381,7 @@ nav{
 .logo-img {
     max-width: 3.8rem;
     max-height: 3.8rem;
-    transition: 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .logo-img:hover {
@@ -740,7 +740,7 @@ mark.purple {
 }
 
 .jinxMode .logo-img {
-    filter: hue-rotate(30deg);
+    filter: invert(62%) sepia(68%) saturate(5517%) hue-rotate(309deg) brightness(107%) contrast(104%) grayscale(0%) drop-shadow(2px 2px 8px #FF4F9B);;
 }
 
 .jinxMode .me-doodle, 
