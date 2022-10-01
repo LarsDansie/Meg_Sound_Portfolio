@@ -325,6 +325,7 @@ a {
 }
 
 .blah-2-doodles {
+    display: none;
     position: absolute;
     top: 25vh;
     left: 30vw;
@@ -753,7 +754,8 @@ mark.purple {
 .jinxMode .vi-doodles,
 .jinxMode .star-doodle,
 .jinxMode .pink-x-doodles,
-.jinxMode .boom-doodle {
+.jinxMode .boom-doodle,
+.jinxMode .blah-2-doodles {
     display: block;
 }
 
