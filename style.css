@@ -101,17 +101,16 @@ a {
     display: none;
     position: absolute;
     top: 6vh;
-    left: 18vw;
+    left: 16vw;
     height: auto;
     width: 10%;
     z-index: 999;
-    transform: rotate(35deg);
 }
 
 .monkey-2-doodle {
     display: none;
     position: absolute;
-    top: 1vh;
+    top: 0;
     left: 28vw;
     height: auto;
     width: 5%;
@@ -324,9 +323,19 @@ a {
     padding: 20vh 20vw;
 }
 
+.blah-2-doodles {
+    position: absolute;
+    top: 25vh;
+    left: 30vw;
+    transform: rotate(15deg);
+    height: auto;
+    width: 10%;
+}
+
 .contact-text {
     font-size: 3rem;
     padding-bottom: 1.5em;
+    z-index: 99;
 }
 
 @media screen and (max-width:768px) {
@@ -730,6 +739,10 @@ mark.purple {
     background-position: 68%;
 }
 
+.jinxMode .logo-img {
+    filter: hue-rotate(30deg);
+}
+
 .jinxMode .me-doodle, 
 .jinxMode .monkey-2-doodle, 
 .jinxMode .jinxmodetext,
@@ -772,6 +785,7 @@ mark.purple {
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 10px;
+    z-index: 999;
 }
 
 #ds
