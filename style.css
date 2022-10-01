@@ -544,7 +544,8 @@ nav{
 
 
 .reel {
-    background: #000
+    background: #000;
+    min-height: 90vh;
 }
 
 .reel-container {
