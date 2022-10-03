@@ -117,7 +117,16 @@ a {
     width: 5%;
     /* transform: rotate(deg); */
     z-index: 999;
+}
 
+.pink-x-circle-doodle {
+    display: none;
+    position: absolute;
+    top: 60vh;
+    left: 7vw;
+    transform: rotate(-10deg);
+    height: auto;
+    width: 10%;
 }
 
 .main-name {
@@ -151,13 +160,33 @@ a {
 .boom-doodle {
     display: none;
     position: absolute;
-    top: -12vh;
-    left: 32vw;
+    top: 120vh;
+    left: 28vw;
     height: auto;
-    width: 45%;
-    transform: rotate(5deg);
+    width: 20%;
+    transform: rotate(10deg)
 }
 
+.blue-x-doodles {
+    display: none;
+    position: absolute;
+    top: 130vh;
+    left: 85vw;
+    height: auto;
+    width: 10%;
+    transform: rotate(0deg);
+    z-index: 99999;
+}
+
+.pow-doodles {
+    display: none;
+    position: absolute;
+    top: 130vh;
+    left: 33vw;
+    height: auto;
+    width: 15%;
+    transform: rotate(20deg);
+}
 .sound-design-title {
     font-size: 3vw;
     color: var(--black);
@@ -420,12 +449,12 @@ nav{
 
 .monkey-btn {
     height: 5rem;
-    filter: grayscale(80%);
+    filter: grayscale(70%);
     transition: filter .5s ease-in-out;
 }
 
 .monkey-btn:hover {
-    filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B );
+    filter: grayscale(0%) drop-shadow(0 0 6px #FF4F9B );
 }
 
 .monkey-btn:active {
@@ -756,7 +785,9 @@ mark.purple {
 .jinxMode .star-doodle,
 .jinxMode .pink-x-doodles,
 .jinxMode .boom-doodle,
-.jinxMode .blah-2-doodles {
+.jinxMode .blah-2-doodles,
+.jinxMode .pink-x-circle-doodle,
+.jinxMode .blue-x-doodles {
     display: block;
 }
 
