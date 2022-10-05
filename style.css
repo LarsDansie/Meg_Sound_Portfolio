@@ -708,6 +708,18 @@ iframe {
     border-color: var(--main-color); 
 }
 
+.meg-collage {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    z-index: 4;
+    padding: .3em;
+    border-style: solid;
+    border-width: .3em;
+    border-color: var(--main-color); 
+}
+
 .goth-meg-img {
     display: none;
     width: 100%;
@@ -715,6 +727,19 @@ iframe {
     max-width: 350px;
     padding: .3em;
     border-style: solid;
+    border-right: 0px;
+    border-width: .3em;
+    border-color: var(--main-color); 
+}
+
+.shark-jinx-img {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    padding: .3em;
+    border-style: solid;
+    border-left: 0px;
     border-width: .3em;
     border-color: var(--main-color); 
 }
@@ -722,8 +747,8 @@ iframe {
 .me-doodle {
     display: none;
     position: absolute;
-    top: -25vh;
-    left: 11vw;
+    top: -22vh;
+    left: 33vw;
     height: 40vh;
     transform: rotate(5deg);
     z-index: 5;
@@ -815,9 +840,15 @@ mark.purple {
     display: none;
 }
 
-.jinxMode .goth-meg-img {
-    display: block;
+.jinxMode .goth-meg-img, .jinxMode .shark-jinx-img {
+    display: inline-block;
+}
 
+.jinxMode .goth-meg-img {
+    padding-right: 0;
+}
+.jinxMode .shark-jinx-img {
+    padding-left: 0;
 }
 
 .jinxMode .me-doodle, 
@@ -832,7 +863,8 @@ mark.purple {
 .jinxMode .boom-doodle,
 .jinxMode .blah-2-doodles,
 .jinxMode .pink-x-circle-doodle,
-.jinxMode .blue-x-doodles {
+.jinxMode .blue-x-doodles,
+.jinxMode .meg-collage {
     display: block;
 }
 
