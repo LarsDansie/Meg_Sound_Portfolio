@@ -839,7 +839,25 @@ mark.purple {
 
 .jinxMode .monkey-btn {
     filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B);
-    animation: flicker 1.5s infinite alternate;
+    animation: flicker-monkey 2.5s infinite alternate;
+}
+
+@keyframes flicker-monkey {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        filter:
+        drop-shadow(0 0 .5px rgba(255, 11, 117, 0.2))
+        drop-shadow(0 0 2.5px rgba(255, 11, 117, 0.7))
+        drop-shadow(0 0 1.5px rgba(255, 11, 117, 0.2))
+        drop-shadow(0 0 3px rgba(255, 11, 117, 0.9))
+        drop-shadow(0 0 1px rgba(255, 11, 117, 0.6))
+        ;        
+    }
+    
+    20%, 24%, 55% {
+        filter: drop-shadow(0 0 0);
+    }    
 }
 
 .jinxMode .main-name {
