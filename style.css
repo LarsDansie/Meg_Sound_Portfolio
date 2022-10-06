@@ -15,6 +15,11 @@
     src: url(/Fonts/Jinxfont2.0.otf);
 }
 
+@font-face {
+    font-family: thinnerJinxFont;
+    src: url(/Fonts/JinxThin-Regular.otf);
+}
+
 :root {
 
     /* colors */
@@ -30,10 +35,12 @@
     /* fonts */
     --main-font: customFont;
     --name-font: customFont;
+    --inner-name-font: customFont;
 }
 
 [data-theme="jinx"] {
     --name-font: jinxFont;
+    --inner-name-font: thinnerJinxFont;
     --navbar: #00C5E2;
     --main-color: #00C5E2;
     --border-color-1: #00C5E2;
@@ -113,7 +120,25 @@ a {
     height: auto;
     width: 10%;
     z-index: 999;
-    filter: drop-shadow(2px 2px 5px #FF4F9B);
+    animation: flicker-svg 1.5s infinite alternate;
+}
+
+@keyframes flicker-svg {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        filter:
+        drop-shadow(0 0 1px rgba(255, 11, 117, 0.2))
+        drop-shadow(0 0 5px rgba(255, 11, 117, 0.7))
+        drop-shadow(0 0 3px rgba(255, 11, 117, 0.2))
+        drop-shadow(0 0 10px rgba(255, 11, 117, 0.9))
+        drop-shadow(0 0 4px rgba(255, 11, 117, 0.6))
+        ;        
+    }
+    
+    20%, 24%, 55% {
+        filter: drop-shadow(0 0 0);
+    }    
 }
 
 .monkey-2-doodle {
@@ -138,7 +163,7 @@ a {
 }
 
 .main-name {
-    display: flex;
+    position: relative;
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--name-font);
@@ -457,7 +482,7 @@ nav{
 .monkey-btn {
     height: 5rem;
     filter: grayscale(70%);
-    transition: filter .5s ease-in-out;
+    transition: filter .5s ease-out;
 }
 
 .monkey-btn:hover {
@@ -814,15 +839,12 @@ mark.purple {
 
 .jinxMode .monkey-btn {
     filter: grayscale(0%) drop-shadow(0 0 2px #FF4F9B);
+    animation: flicker 1.5s infinite alternate;
 }
 
 .jinxMode .main-name {
     font-size: 2.8vw;
     letter-spacing: 0.2rem;
-    background-image: linear-gradient(90deg, var(--border-color-1), var(--border-color-2));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .jinxMode #contact {
