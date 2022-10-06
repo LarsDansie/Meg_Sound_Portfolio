@@ -300,8 +300,8 @@ a {
 .pink-x-doodles {
     display: none;
     position: absolute;
-    top: 65vh;
-    left: 75vw;
+    top: 63vh;
+    left: 71vw;
     transform: rotate(-10deg);
     height: auto;
     width: 18%;
@@ -318,7 +318,7 @@ a {
     font-size: 1.3rem;
     max-width: 40%;
     z-index: 99;
-    padding-left: 5vw;
+    padding-left: 7vw;
 }
 
 
