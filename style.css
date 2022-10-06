@@ -797,6 +797,16 @@ iframe {
     z-index: 5;
 }
 
+.blue-x-circle-doodle {
+    display: none;
+    position: absolute;
+    top: 7vh;
+    left: 26vw;
+    transform: rotate(20deg);
+    height: auto;
+    width: 10%;
+}
+
 
 /* mark stuff */
 
@@ -929,7 +939,8 @@ mark.purple {
 .jinxMode .pink-x-circle-doodle,
 .jinxMode .blue-x-doodles,
 .jinxMode .meg-collage,
-.jinxMode .blue-x-2-doodle {
+.jinxMode .blue-x-2-doodle,
+.jinxMode .blue-x-circle-doodle {
     display: block;
 }
 
