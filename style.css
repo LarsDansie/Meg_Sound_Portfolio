@@ -2,6 +2,14 @@
     margin: 0px;
     padding: 0px;
 }
+/* @media screen and (min-resolution: 120dpi) { 
+    body {zoom: 0.8;}
+    } */
+/* @media (-webkit-device-pixel-ratio: 1.25) {
+    * {
+      zoom: 0.8;
+    }
+  } */
 
 /* Font stuff  */
 
@@ -166,14 +174,14 @@ a {
     width: 10%;
 }
 
-.blue-x-2-doodle {
+.blue-x-2-doodles {
     display: none;
     position: absolute;
-    top: 10vh;
-    left: 4vw;
-    transform: rotate(-10deg);
+    top: 65vh;
+    left: 15vw;
+    transform: rotate(0deg) ;
     height: auto;
-    width: 10%;
+    width: 12%;
 }
 
 .multi-x-doodles {
@@ -761,8 +769,9 @@ nav{
     border-style: solid;
     border-width: .3em;
     border-color: var(--vid-border-color-1);
-    filter: drop-shadow(0px 0px 30px var(--dropshadow-color-1 ));
+    /* filter: drop-shadow(0px 0px 30px var(--dropshadow-color-1 )); */
 }
+
 
 .box-content {
     color: var(--black);
@@ -884,11 +893,12 @@ iframe {
 .blue-x-circle-doodle {
     display: none;
     position: absolute;
-    top: 7vh;
-    left: 26vw;
+    top: -7vh;
+    left: 13vw;
     transform: rotate(20deg);
     height: auto;
-    width: 10%;
+    width: 12%;
+    z-index: 9999;
 }
 
 
@@ -1035,7 +1045,6 @@ mark.purple {
  }
 
 
-
 .jinxMode .me-doodle, 
 .jinxMode .monkey-2-doodle, 
 .jinxMode .jinxmodetext,
@@ -1050,7 +1059,7 @@ mark.purple {
 .jinxMode .pink-x-circle-doodle,
 .jinxMode .blue-x-doodles,
 .jinxMode .meg-collage,
-.jinxMode .blue-x-2-doodle,
+.jinxMode .blue-x-2-doodles,
 .jinxMode .blue-x-circle-doodle,
 .jinxMode .pink-cloud-doodle,
 .jinxMode .multi-x-doodles,
