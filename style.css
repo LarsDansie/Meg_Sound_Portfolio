@@ -57,7 +57,7 @@
     --border-color-2: #FF529C;
     --vid-border-color-1: #00C5E2;
     --vid-border-color-2: #FF529C;
-    --dropshadow-color-1: #0097e2;
+    --dropshadow-color-1: #02a2ba;
     --dropshadow-color-2: #ff5275;
 }
 
@@ -762,6 +762,7 @@ nav{
     border-width: .3em;
     border-color: var(--vid-border-color-2);
     filter: drop-shadow(0px 0px 30px var(--dropshadow-color-2));
+    animation: pulse-2 2.2s infinite;
 }
 
 .vid-2 {
@@ -770,8 +771,27 @@ nav{
     border-width: .3em;
     border-color: var(--vid-border-color-1);
     /* filter: drop-shadow(0px 0px 30px var(--dropshadow-color-1 )); */
+    animation: pulse-1 2.5s infinite;
 }
 
+
+@keyframes pulse-1 {
+	0%,100% {
+		filter: drop-shadow(0 0 1px var(--dropshadow-color-1));
+	}
+	50% {
+		filter: drop-shadow(0 0 40px var(--dropshadow-color-1));
+	}
+}
+
+@keyframes pulse-2 {
+	0%,100% {
+		filter: drop-shadow(0 0 1px var(--dropshadow-color-2));
+	}
+	50% {
+		filter: drop-shadow(0 0 35px var(--dropshadow-color-2));
+	}
+}
 
 .box-content {
     color: var(--black);
