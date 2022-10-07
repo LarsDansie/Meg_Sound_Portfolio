@@ -155,7 +155,7 @@ a {
 .pink-x-circle-doodle {
     display: none;
     position: absolute;
-    top: 60vh;
+    top: 75vh;
     left: 7vw;
     transform: rotate(-10deg);
     height: auto;
@@ -170,6 +170,16 @@ a {
     transform: rotate(-10deg);
     height: auto;
     width: 10%;
+}
+
+.multi-x-doodles {
+    display: none;
+    position: absolute;
+    top: 20vh;
+    left: 3vw;
+    height: auto;
+    width: 25%;
+    transform: rotate(10deg);
 }
 
 .main-name {
@@ -209,26 +219,42 @@ a {
     transform: rotate(10deg)
 }
 
-.blue-x-doodles {
+.pow-pow-doodle {
     display: none;
     position: absolute;
-    top: 130vh;
-    left: 85vw;
+    top: 42vw;
+    left: 70vw;
     height: auto;
-    width: 10%;
-    transform: rotate(0deg);
+    width: 15%;
+    transform: rotate(-15deg);
     z-index: 9999;
 }
 
-.pow-doodles {
+.hourglass-2-doodles {
     display: none;
     position: absolute;
-    top: 130vh;
-    left: 33vw;
+    top: 50vh;
+    left: 64vw;
+    height: auto;
+    width: 10%;
+    transform: rotate(-10deg);
+    z-index: 10;
+}
+
+.blue-cloud-doodle {
+    display: none;
+    position: absolute;
+    top: 55vh;
+    left: 85vw;
     height: auto;
     width: 15%;
     transform: rotate(20deg);
 }
+
+
+/* sound design section */
+
+
 .sound-design-title {
     font-size: 3vw;
     color: var(--black);
@@ -303,6 +329,16 @@ a {
     top: 63vh;
     left: 71vw;
     transform: rotate(-10deg);
+    height: auto;
+    width: 18%;
+}
+
+.pink-cloud-doodle {
+    display: none;
+    position: absolute;
+    top: -20vh;
+    left: 0;
+    /* transform: rotate(10deg); */
     height: auto;
     width: 18%;
 }
@@ -399,6 +435,17 @@ a {
     transform: rotate(15deg);
     height: auto;
     width: 10%;
+}
+
+.blue-x-doodles {
+    display: none;
+    position: absolute;
+    top: 35vh;
+    left: 85vw;
+    height: auto;
+    width: 10%;
+    transform: rotate(0deg);
+    z-index: 9999;
 }
 
 .contact-text {
@@ -671,7 +718,8 @@ nav{
     border-style: solid;
     border-width: .3em;
     border-color: var(--vid-border-color-2);
-    filter: drop-shadow(0px 0px 30px 10px var(--border-color-2));
+    filter: drop-shadow(0px 0px 30px var(--border-color-2));
+    z-index: 9999;
 }
 
 .vid-2 {
@@ -679,7 +727,7 @@ nav{
     border-style: solid;
     border-width: .3em;
     border-color: var(--vid-border-color-1);
-    filter: drop-shadow(0px 0px 30px 10px var(--border-color-1 ));
+    filter: drop-shadow(0px 0px 30px var(--border-color-1 ));
 }
 
 .box-content {
@@ -786,6 +834,7 @@ iframe {
     border-style: solid;
     border-width: .3em;
     border-color: var(--main-color); 
+    z-index: 99;
 }
 
 .me-doodle {
@@ -795,7 +844,7 @@ iframe {
     left: 31vw;
     height: 40vh;
     transform: rotate(7deg);
-    z-index: 5;
+    z-index: 999;
 }
 
 .blue-x-circle-doodle {
@@ -903,7 +952,8 @@ mark.purple {
     bottom: -6px;
     background: linear-gradient(-45deg, #00C5E2, #0cbcf2, #FF529C, #ff006f);
     z-index: -1;
-  }
+}
+
 .jinxMode .reel-container::before {
     content: '';
     position: absolute;
@@ -939,7 +989,7 @@ mark.purple {
     display: inline-block;
 }
 
-@media screen and (max-width: 1355px) {
+@media screen and (max-width: 1545px) {
     .jinxMode .transparent-img {
         display: none;
     }
@@ -967,7 +1017,12 @@ mark.purple {
 .jinxMode .blue-x-doodles,
 .jinxMode .meg-collage,
 .jinxMode .blue-x-2-doodle,
-.jinxMode .blue-x-circle-doodle {
+.jinxMode .blue-x-circle-doodle,
+.jinxMode .pink-cloud-doodle,
+.jinxMode .multi-x-doodles,
+.jinxMode .hourglass-2-doodles,
+.jinxMode .pow-pow-doodle,
+.jinxMode .blue-cloud-doodle {
     display: block;
 }
 
