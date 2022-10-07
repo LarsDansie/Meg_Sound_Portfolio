@@ -31,6 +31,8 @@
     --navbar: #ab91bc;
     --vid-border-color-1: #000;
     --vid-border-color-2: #000;
+    --dropshadow-color-1: #EEE;
+    --dropshadow-color-2: #EEE;
 
     /* fonts */
     --main-font: customFont;
@@ -47,6 +49,8 @@
     --border-color-2: #FF529C;
     --vid-border-color-1: #00C5E2;
     --vid-border-color-2: #FF529C;
+    --dropshadow-color-1: #0097e2;
+    --dropshadow-color-2: #ff5275;
 }
 
 /* Body stuff */
@@ -228,6 +232,7 @@ a {
     width: 15%;
     transform: rotate(-15deg);
     z-index: 9999;
+    pointer-events: none; 
 }
 
 .hourglass-2-doodles {
@@ -251,8 +256,36 @@ a {
     transform: rotate(20deg);
 }
 
+.bullets-doodle {
+    display: none;
+    position: absolute;
+    top: 85vh;
+    left: 85vw;
+    height: auto;
+    width: 15%;
+    transform: scaleX(-1)
+}
 
-/* sound design section */
+.bullets-2-doodle {
+    display: none;
+    position: absolute;
+    top: 25vh;
+    left: 82vw;
+    height: auto;
+    width: 15%;
+    transform: rotate(-20deg)
+}
+
+.blue-2-cloud-doodle {
+    display: none;
+    position: absolute;
+    top: 95vh;
+    left: 70vw;
+    height: auto;
+    width: 35%;
+    z-index: 9992;
+    /* transform: rotate(20deg); */
+}
 
 
 .sound-design-title {
@@ -272,6 +305,7 @@ a {
         display: none;
     }
 }
+
 
 
 #about {
@@ -336,11 +370,11 @@ a {
 .pink-cloud-doodle {
     display: none;
     position: absolute;
-    top: -20vh;
-    left: 0;
-    /* transform: rotate(10deg); */
+    top: 0;
+    left: 77vw;
     height: auto;
-    width: 18%;
+    width: 20%;
+    transform: rotate(20deg);
 }
 
 
@@ -706,6 +740,7 @@ nav{
     align-content: center;
     gap: 3rem;
     z-index: 100;
+    z-index: 9999;
 }
 
 .video-grid iframe {
@@ -718,8 +753,7 @@ nav{
     border-style: solid;
     border-width: .3em;
     border-color: var(--vid-border-color-2);
-    filter: drop-shadow(0px 0px 30px var(--border-color-2));
-    z-index: 9999;
+    filter: drop-shadow(0px 0px 30px var(--dropshadow-color-2));
 }
 
 .vid-2 {
@@ -727,7 +761,7 @@ nav{
     border-style: solid;
     border-width: .3em;
     border-color: var(--vid-border-color-1);
-    filter: drop-shadow(0px 0px 30px var(--border-color-1 ));
+    filter: drop-shadow(0px 0px 30px var(--dropshadow-color-1 ));
 }
 
 .box-content {
@@ -1022,7 +1056,10 @@ mark.purple {
 .jinxMode .multi-x-doodles,
 .jinxMode .hourglass-2-doodles,
 .jinxMode .pow-pow-doodle,
-.jinxMode .blue-cloud-doodle {
+.jinxMode .blue-cloud-doodle,
+.jinxMode .blue-2-cloud-doodle,
+.jinxMode .bullets-doodle,
+.jinxMode .bullets-2-doodle {
     display: block;
 }
 
