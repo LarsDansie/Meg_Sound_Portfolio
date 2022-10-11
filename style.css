@@ -153,17 +153,6 @@ a {
     }    
 }
 
-.monkey-2-doodle {
-    display: none;
-    position: absolute;
-    top: 60vh;
-    left: 4vw;
-    height: auto;
-    width: 10%;
-    transform: rotate(-30deg) scaleX(-1);
-    z-index: 999;
-}
-
 .time-things-2 {
     display: none;
     position: absolute;
@@ -1135,7 +1124,6 @@ mark.purple {
 
 
 .jinxMode .me-doodle, 
-.jinxMode .monkey-2-doodle, 
 .jinxMode .jinxmodetext,
 .jinxMode .haha-1-doodles,
 .jinxMode .m-doodle,
