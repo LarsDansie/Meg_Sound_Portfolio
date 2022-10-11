@@ -156,42 +156,104 @@ a {
 .monkey-2-doodle {
     display: none;
     position: absolute;
-    top: 0;
-    left: 28vw;
+    top: 60vh;
+    left: 4vw;
     height: auto;
-    width: 5%;
-    /* transform: rotate(deg); */
+    width: 10%;
+    transform: rotate(-30deg) scaleX(-1);
     z-index: 999;
+}
+
+.time-things-2 {
+    display: none;
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+    height: auto;
+    width: 10%;
+    transform: rotate(-5deg);
+    z-index: 9991;
+}
+
+.pink-cloud-doodle {
+    display: none;
+    position: absolute;
+    top: 15vh;
+    left: 2vw;
+    height: auto;
+    width: 20%;
+    transform: rotate(-10deg);
+    z-index: 9999;
 }
 
 .pink-x-circle-doodle {
     display: none;
     position: absolute;
-    top: 75vh;
-    left: 7vw;
-    transform: rotate(-10deg);
+    top: 80vh;
+    left: 10vw;
+    transform: rotate(0deg);
     height: auto;
     width: 10%;
 }
 
-.blue-x-2-doodles {
+.blue-x-circle-doodle {
     display: none;
     position: absolute;
-    top: 65vh;
-    left: 15vw;
-    transform: rotate(0deg) ;
+    top: 8vh;
+    left: 10vw;
+    transform: rotate(20deg);
     height: auto;
     width: 12%;
 }
 
-.multi-x-doodles {
+.blue-cloud-3-doodle {
     display: none;
     position: absolute;
-    top: 20vh;
-    left: 3vw;
+    top: 4vh;
+    left: 78vw;
     height: auto;
-    width: 25%;
+    width: 18%;
     transform: rotate(10deg);
+}
+
+.pink-bullets-crossed {
+    display: none;
+    position: absolute;
+    top: 0vh;
+    left: 25vw;
+    height: auto;
+    width: 6%;
+    transform: rotate(-20deg);
+}
+
+.blue-bullets-crossed {
+    display: none;
+    position: absolute;
+    top: 78vh;
+    left: 88vw;
+    height: auto;
+    width: 10%;
+    transform: rotate(-20deg);
+}
+
+.pink-cloud-2-doodle {
+    display: none;
+    position: absolute;
+    top: 55vh;
+    left: 2vw;
+    height: auto;
+    width: 18%;
+    transform: rotate(0deg);
+}
+
+.pink-cloud-3-reel {
+    display: none;
+    position: absolute;
+    top: 25vh;
+    left: 2vw;
+    height: auto;
+    width: 18%;
+    transform: rotate(-10deg);
 }
 
 .main-name {
@@ -262,6 +324,26 @@ a {
     height: auto;
     width: 15%;
     transform: rotate(20deg);
+}
+
+.blue-cloud-4-doodle {
+    display: none;
+    position: absolute;
+    top: -4vh;
+    left: 65vw;
+    height: auto;
+    width: 20%;
+    transform: rotate(0deg);
+}
+
+.pink-cloud-3-doodle {
+    display: none;
+    position: absolute;
+    top: 65vh;
+    left: 35vw;
+    height: auto;
+    width: 12%;
+    transform: rotate(0deg);
 }
 
 .bullets-doodle {
@@ -375,16 +457,15 @@ a {
     width: 18%;
 }
 
-.pink-cloud-doodle {
+.blue-x-2-doodles {
     display: none;
     position: absolute;
-    top: 0;
-    left: 77vw;
+    top: 65vh;
+    left: 15vw;
+    transform: rotate(0deg) ;
     height: auto;
-    width: 20%;
-    transform: rotate(20deg);
+    width: 12%;
 }
-
 
 .about-content {
     display: flex;
@@ -910,18 +991,6 @@ iframe {
     z-index: 999;
 }
 
-.blue-x-circle-doodle {
-    display: none;
-    position: absolute;
-    top: -7vh;
-    left: 13vw;
-    transform: rotate(20deg);
-    height: auto;
-    width: 12%;
-    z-index: 9999;
-}
-
-
 /* mark stuff */
 
 mark.purple {
@@ -1082,13 +1151,20 @@ mark.purple {
 .jinxMode .blue-x-2-doodles,
 .jinxMode .blue-x-circle-doodle,
 .jinxMode .pink-cloud-doodle,
-.jinxMode .multi-x-doodles,
+.jinxMode .blue-cloud-3-doodle,
 .jinxMode .hourglass-2-doodles,
 .jinxMode .pow-pow-doodle,
 .jinxMode .blue-cloud-doodle,
 .jinxMode .blue-2-cloud-doodle,
 .jinxMode .bullets-doodle,
-.jinxMode .bullets-2-doodle {
+.jinxMode .bullets-2-doodle,
+.jinxMode .pink-bullets-crossed,
+.jinxMode .blue-bullets-crossed,
+.jinxMode .pink-cloud-2-doodle,
+.jinxMode .time-things-2,
+.jinxMode .blue-cloud-4-doodle,
+.jinxMode .pink-cloud-3-doodle,
+.jinxMode .pink-cloud-3-reel {
     display: block;
 }
 
