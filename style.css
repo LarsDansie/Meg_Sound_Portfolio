@@ -13,6 +13,10 @@
 
 /* Font stuff  */
 
+html {
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+  }
+
 @font-face {
     font-family: customFont;
     src: url(/Fonts/Bebas_Neue_Pro_Middle_Middle/Bebas\ Neue\ Pro\ Middle.ttf);
@@ -42,12 +46,10 @@
     /* fonts */
     --main-font: customFont;
     --name-font: customFont;
-    --inner-name-font: customFont;
 }
 
 [data-theme="jinx"] {
     --name-font: jinxFont;
-    --inner-name-font: thinnerJinxFont;
     --navbar: #00C5E2;
     --main-color: #00C5E2;
     --border-color-1: #00C5E2;
