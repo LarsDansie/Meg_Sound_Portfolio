@@ -63,10 +63,11 @@ html {
 /* Body stuff */
 
 body {
-    font-family: customFont;
+    font-family: var(--main-font);
     color: var(--white);
     background-color: var(--black);
     overflow-x: hidden;
+    font-display: optional
 }
 html{
     scroll-behavior: smooth;
