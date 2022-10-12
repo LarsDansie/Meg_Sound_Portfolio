@@ -13,9 +13,6 @@
 
 /* Font stuff  */
 
-html {
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-  }
 
 @font-face {
     font-family: customFont;
@@ -67,7 +64,7 @@ body {
     color: var(--white);
     background-color: var(--black);
     overflow-x: hidden;
-    font-display: optional
+    font-display: block
 }
 html{
     scroll-behavior: smooth;
@@ -262,6 +259,7 @@ a {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--name-font);
+    font-display: optional;
     font-size: 3vw;
     color: var(--main-color);
     letter-spacing: .6rem;
