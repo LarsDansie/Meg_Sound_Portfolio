@@ -258,7 +258,7 @@ a {
     position: relative;
     padding-bottom: 1rem;
     text-transform: uppercase;
-    font-family: var(--name-font);
+    font-family: var(--name-font), 'Barlow', sans-serif;
     font-display: optional;
     font-size: 3vw;
     color: var(--main-color);
