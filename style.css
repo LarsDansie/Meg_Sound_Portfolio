@@ -23,10 +23,7 @@
     src: url(/Fonts/Jinxfont2.0.otf);
 }
 
-@font-face {
-    font-family: thinnerJinxFont;
-    src: url(/Fonts/JinxThin-Regular.otf);
-}
+
 
 :root {
 
