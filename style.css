@@ -153,18 +153,7 @@ a {
     }    
 }
 
-.time-things-2 {
-    display: none;
-    position: absolute;
-    top: 55vh;
-    left: 10vw;
-    height: auto;
-    width: 10%;
-    transform: rotate(-5deg);
-    z-index: 9991;
-}
-
-.pink-cloud-doodle {
+/* .pink-cloud-doodle {
     display: none;
     position: absolute;
     top: 15vh;
@@ -173,7 +162,7 @@ a {
     width: 20%;
     transform: rotate(-10deg);
     z-index: 9999;
-}
+} */
 
 .pink-x-circle-doodle {
     display: none;
@@ -188,11 +177,34 @@ a {
 .blue-x-circle-doodle {
     display: none;
     position: absolute;
+    top: 73vh;
+    left: 86vw;
+    transform: rotate(0deg);
+    height: auto;
+    width: 12%;
+    z-index: 9998;
+}
+
+/* .blue-x-circle-doodle {
+    display: none;
+    position: absolute;
     top: 8vh;
     left: 10vw;
     transform: rotate(20deg);
     height: auto;
     width: 12%;
+} */
+
+.pow-pow-doodle {
+    display: none;
+    position: absolute;
+    top: 42vw;
+    left: 70vw;
+    height: auto;
+    width: 15%;
+    transform: rotate(-15deg);
+    z-index: 9999;
+    pointer-events: none; 
 }
 
 .pink-cloud-2-doodle {
@@ -208,24 +220,24 @@ a {
 .pink-bullets-crossed {
     display: none;
     position: absolute;
-    top: 30vh;
+    top: 23vh;
     left: 6vw;
     height: auto;
     width: 15%;
     transform: rotate(-25deg);
 }
 
-.pink-cloud-3-reel {
+/* .pink-cloud-3-reel {
     display: none;
     position: absolute;
     top: 0vh;
     left: 25vw;
     height: auto;
     width: 6%;
-    transform: rotate(-20deg);
-}
+    transform: rotate(-0deg);
+} */
 
-.blue-bullets-crossed {
+/* .blue-bullets-crossed {
     display: none;
     position: absolute;
     top: 78vh;
@@ -233,12 +245,12 @@ a {
     height: auto;
     width: 10%;
     transform: rotate(-20deg);
-}
+} */
 
 .blue-cloud-3-doodle {
     display: none;
     position: absolute;
-    top: 55vh;
+    top: 50vh;
     left: 2vw;
     height: auto;
     width: 18%;
@@ -280,18 +292,6 @@ a {
     height: auto;
     width: 20%;
     transform: rotate(10deg)
-}
-
-.pow-pow-doodle {
-    display: none;
-    position: absolute;
-    top: 42vw;
-    left: 70vw;
-    height: auto;
-    width: 15%;
-    transform: rotate(-15deg);
-    z-index: 9999;
-    pointer-events: none; 
 }
 
 .hourglass-2-doodles {
@@ -449,8 +449,8 @@ a {
 .blue-x-2-doodles {
     display: none;
     position: absolute;
-    top: 50vh;
-    left: 2vw;
+    top: 48vh;
+    left: 5vw;
     transform: rotate(0deg) ;
     height: auto;
     width: 15%;
