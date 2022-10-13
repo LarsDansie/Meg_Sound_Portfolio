@@ -533,8 +533,9 @@ a {
 #contact {
     background-color: var(--white);
     color: var(--black);
-    height: 20vh;
-    padding: 20vh 20vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 15vh;
 }
 
 .blah-2-doodles {
@@ -1170,6 +1171,15 @@ mark.purple {
     height: 100%;
 }
 
+.resume-btn-container{
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .icon-btn
 {
     width: 6rem;
@@ -1184,6 +1194,30 @@ mark.purple {
     transition: all 0.3s;
     border-radius: 10px;
     z-index: 999;
+}
+
+.resume-icon-btn {
+    width: 14rem;
+    height: 4rem;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+    z-index: 999;
+
+}
+
+.resume-icon-btn a {
+    text-decoration: none;
+    color: #EEE;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
 }
 
 #ds
@@ -1227,6 +1261,16 @@ mark.purple {
 {
     transform: scale(1.2);
     box-shadow: 0 30px 45px -15px rgba(255, 87, 87,0.6);
+}
+
+.resume-icon-btn {
+    box-shadow: 0 20px 20px -17px rgba(204, 0, 255, 0.53);
+}
+
+.resume-icon-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(204, 0, 255, 0.6);
 }
 
 @media (max-width: 767px) {
