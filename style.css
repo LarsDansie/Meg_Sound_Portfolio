@@ -1197,7 +1197,7 @@ mark.purple {
 }
 
 .resume-icon-btn {
-    width: 14rem;
+    width: 12rem;
     height: 4rem;
     background-color: var(--black);
     display: flex;
@@ -1214,10 +1214,10 @@ mark.purple {
 
 .resume-icon-btn a {
     text-decoration: none;
-    color: var(--main-color);
-    font-size: 1.5rem;
+    color: #EEE;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: .4rem;
+    letter-spacing: .2rem;
 }
 
 #ds
