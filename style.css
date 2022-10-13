@@ -447,11 +447,11 @@ a {
 .blue-x-2-doodles {
     display: none;
     position: absolute;
-    top: 48vh;
-    left: 5vw;
+    top: 47vh;
+    left: 3vw;
     transform: rotate(0deg) ;
     height: auto;
-    width: 15%;
+    width: 25%;
 }
 
 .about-content {
@@ -1264,7 +1264,7 @@ mark.purple {
 }
 
 .resume-icon-btn {
-    box-shadow: 0 20px 20px -17px rgba(150, 102, 184, 0.9); 
+    box-shadow: 0 20px 20px -17px rgba(150, 102, 184, 0.7); 
 }
 
 .resume-icon-btn:hover
