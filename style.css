@@ -1214,7 +1214,7 @@ mark.purple {
 
 .resume-icon-btn a {
     text-decoration: none;
-    color: #EEE;
+    color: var(--main-color);
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .4rem;
@@ -1264,13 +1264,13 @@ mark.purple {
 }
 
 .resume-icon-btn {
-    box-shadow: 0 20px 20px -17px rgba(204, 0, 255, 0.53);
+    box-shadow: 0 20px 20px -17px rgba(150, 102, 184, 0.9); 
 }
 
 .resume-icon-btn:hover
 {
     transform: scale(1.2);
-    box-shadow: 0 30px 45px -15px rgba(204, 0, 255, 0.6);
+    box-shadow: 0 30px 45px -15px rgba(150, 102, 184, 0.9);
 }
 
 @media (max-width: 767px) {
