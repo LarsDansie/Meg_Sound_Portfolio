@@ -581,9 +581,9 @@ nav{
 }
 
 @media screen and (max-width:768px) {
-    nav {
+    /* nav {
         padding-top: 0;
-    }
+    } */
 }
 
 .logo {
@@ -686,6 +686,13 @@ nav{
     }
     .about-text {
         font-size: 1.5vw;
+    }
+    .monkey-btn {
+        height: 10vh;
+    }
+    .logo-img {
+        padding-top: 1vh;
+        height: 8vh;
     }
 }
 
