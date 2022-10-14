@@ -594,17 +594,6 @@ nav{
     padding-right: 40vw;
 }
 
-.logo a {
-    text-decoration: none;
-    color: var(--white);
-    transition: 0.5s;
-}
-
-.logo a:hover {
-    font-size: 1.12rem;
-    transform: translateY(-5px);
-    color:var(--main-color);
-}
 
 .logo-img {
     max-width: 3.8rem;
@@ -688,11 +677,10 @@ nav{
         font-size: 1.5vw;
     }
     .monkey-btn {
-        height: 10vh;
+        height: 6vh;
     }
     .logo-img {
-        padding-top: 1vh;
-        height: 8vh;
+        height: 4vh;
     }
 }
 
@@ -1018,13 +1006,7 @@ mark.purple {
     color: var(--black);
 }
 
-.scroll-up .logo-img {
-    filter: brightness(0%)
-}
 
-.scroll-down .logo {
-    color: var(--white);
-}
 
 @media screen and (max-width:768px) {
     .scroll-up header {
