@@ -64,7 +64,6 @@ body {
     color: var(--white);
     background-color: var(--black);
     overflow-x: hidden;
-    font-display: block
 }
 html{
     scroll-behavior: smooth;
@@ -260,7 +259,6 @@ a {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: var(--name-font), 'Barlow', sans-serif;
-    font-display: optional;
     font-size: 3vw;
     color: var(--main-color);
     letter-spacing: .6rem;
@@ -572,6 +570,8 @@ a {
     }
 }
 
+/* navbar stuff  */
+
 nav{
     display: flex;
     align-items: center;
@@ -605,7 +605,7 @@ nav{
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
 }
 
 .nav-links li {
@@ -661,15 +661,36 @@ nav{
     transition: all 0.3s ease;
 }
 
+@media screen and (max-width:1300px) {
+    .nav-links a {
+        font-size: 1.4rem;
+    }
+    .logo-img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+    .monkey-btn {
+        height: 4rem;
+    }
+} 
+
 @media screen and (max-width:1090px) {
     .nav-links{
         width: 50%;
     }
     .nav-links a {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        letter-spacing: normal;
     }
     .about-text {
         font-size: 1.5vw;
+    }
+    .logo {
+        padding-right: 25vw;
+    }
+    .main-name {
+        font-size: 5vw;
+        letter-spacing: .3rem;
     }
 }
 
@@ -685,8 +706,11 @@ nav{
         padding: 8vh 3vw;
         padding-right: 6vw;
         padding-bottom: 2vh;
-        padding-top: 12vh;
         min-height: 60vh;
+    }
+    .main-name {
+        font-size: 7vw;
+        letter-spacing: 0.1rem;
     }
     body {
         overflow-x: hidden;
