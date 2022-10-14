@@ -574,7 +574,6 @@ a {
 
 nav{
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     min-height: 8vh;
     padding-top: .5rem;
@@ -587,10 +586,7 @@ nav{
 }
 
 .logo {
-    color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-left: 15vw;
+    padding-left: 5vw;
     padding-right: 40vw;
 }
 
@@ -658,10 +654,10 @@ nav{
 }
 
 .burger div {
-    width: 25px;
+    width: 35px;
     height: 3px;
     background-color: var(--white);
-    margin: 5px;
+    margin: 6px;
     transition: all 0.3s ease;
 }
 
@@ -674,12 +670,6 @@ nav{
     }
     .about-text {
         font-size: 1.5vw;
-    }
-    .monkey-btn {
-        height: 6vh;
-    }
-    .logo-img {
-        height: 4vh;
     }
 }
 
@@ -731,12 +721,21 @@ nav{
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 2vh;
+        top: 2.5vh;
         right: 2vw;
     }
 
     .about-text {
         font-size: 1.8vw;
+    }
+    .monkey-btn {
+        height: 6vh;
+        position: absolute;
+        top: 1vh;
+        right: 15vw;
+    }
+    .logo-img {
+        height: 4vh;
     }
 }
 
