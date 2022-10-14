@@ -594,7 +594,6 @@ nav{
     padding-right: 40vw;
 }
 
-
 .logo-img {
     max-width: 3.8rem;
     max-height: 3.8rem;
@@ -677,10 +676,10 @@ nav{
         font-size: 1.5vw;
     }
     .monkey-btn {
-        height: 6vh;
+        height: 8vh;
     }
     .logo-img {
-        height: 4vh;
+        height: 6vh;
     }
 }
 
@@ -1006,7 +1005,9 @@ mark.purple {
     color: var(--black);
 }
 
-
+.scroll-up .logo-img {
+    filter: brightness(0%)
+}
 
 @media screen and (max-width:768px) {
     .scroll-up header {
