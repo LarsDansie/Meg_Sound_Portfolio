@@ -676,10 +676,10 @@ nav{
         font-size: 1.5vw;
     }
     .monkey-btn {
-        height: 8vh;
+        height: 6vh;
     }
     .logo-img {
-        height: 6vh;
+        height: 4vh;
     }
 }
 
@@ -730,6 +730,9 @@ nav{
     .burger {
         display: block;
         cursor: pointer;
+        position: absolute;
+        top: 2vh;
+        right: 2vw;
     }
 
     .about-text {
