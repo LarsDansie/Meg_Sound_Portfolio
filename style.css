@@ -68,6 +68,7 @@ body {
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 section {
@@ -727,6 +728,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        /* z-index: 99999; */
     }
     .nav-links li {
         opacity: 0;
