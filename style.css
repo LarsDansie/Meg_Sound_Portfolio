@@ -579,12 +579,6 @@ nav{
     padding-top: .5rem;
 }
 
-@media screen and (max-width:768px) {
-    /* nav {
-        padding-top: 0;
-    } */
-}
-
 .logo {
     padding-left: 5vw;
     padding-right: 40vw;
@@ -698,8 +692,6 @@ nav{
     section {
         padding-bottom: 0;
         padding-top: 0;
-        padding-left: 1.5vh;
-        padding-right: 4vh;
     }
 
     #main {
@@ -906,7 +898,37 @@ nav{
     max-width: 500px;
 }
 
+@media screen and (max-width:1610px) {
+    .vid-1, .vid-2 {
+        width: 35vw;
+        height: 300px;
+    }
+    .box-content h2 {
+        font-size: 2rem;
+    }
+    .box-content h3 {
+        font-size: 1.8rem;
+    }
+    .box-content p {
+        font-size: 1.5rem;
+    }
+}
 
+@media screen and (max-width:1470px) {
+    .vid-1, .vid-2 {
+        width: 40vw;
+        height: 280px;
+    }
+    .box-content h2 {
+        font-size: 1.9rem;
+    }
+    .box-content h3 {
+        font-size: 1.7rem;
+    }
+    .box-content p {
+        font-size: 1.5rem;
+    }
+}
 
 
 iframe {
@@ -916,6 +938,19 @@ iframe {
 @media screen and (max-width:1090px) {
     .video-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .vid-1, .vid-2 {
+        width: 60vw;
+        height: 345px;
+    }
+    .box-content h2 {
+        font-size: 2rem;
+    }
+    .box-content h3 {
+        font-size: 1.8rem;
+    }
+    .box-content p {
+        font-size: 1.5rem;
     }
 }
 
