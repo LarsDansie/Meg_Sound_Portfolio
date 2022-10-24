@@ -563,7 +563,11 @@ a {
     padding-bottom: 1.5em;
     z-index: 99;
 }
-
+@media  screen and (max-width: 1610px) {
+    .blah-2-doodles {
+        left: 28vw;
+    }
+}
 @media screen and (max-width:768px) {
     .contact-text {
         font-size: 2rem;
@@ -912,6 +916,17 @@ nav{
     .box-content p {
         font-size: 1.5rem;
     }
+
+    .boom-doodle {
+        left: 33vw;
+        width: 17%;
+        top: 121vh;
+    }
+    .blue-2-cloud-doodle {
+        top: 100vh;
+        width: 33%;
+        left: 75vw;
+    }
 }
 
 @media screen and (max-width:1470px) {
@@ -927,6 +942,19 @@ nav{
     }
     .box-content p {
         font-size: 1.5rem;
+    }
+    .boom-doodle {
+        top: 113vh;
+    }
+    .bullets-2-doodle {
+        left: 86vw;
+    }
+    .blue-cloud-doodle {
+        top: 59vh;
+    }
+    .bullets-doodle {
+        top: 87vh;
+        left: 87vw;
     }
 }
 
@@ -952,6 +980,49 @@ iframe {
     .box-content p {
         font-size: 1.5rem;
     }
+
+    /* doodle stuff */
+
+    .blue-cloud-4-doodle {
+        top: 118vh;
+        left: 70vw;
+        width: 31%;
+    }
+    .bullets-2-doodle {
+        top: 171vh;
+        left: -7vw;
+        width: 35%;
+    } 
+    .blue-cloud-doodle {
+        top: 55vh;
+        left: 73vw;
+        width: 27%;
+    }
+    .hourglass-doodles {
+        top: -4vh;
+        left: -22vw;
+        width: 91%;
+    }
+    .blue-2-cloud-doodle {
+        top: 236vh;
+        width: 52%;
+        left: 59vw;
+    }
+    .bullets-doodle {
+        top: 208vh;
+        left: 73vw;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .vid-1, .vid-2 {
+        width: 80vw;
+        height: 200px;
+    }
+    .box-content {
+        max-width: 80vw;
+    }
 }
 
 .flex {
@@ -967,18 +1038,6 @@ iframe {
 }
 
 .desk-meg-img {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    z-index: 4;
-    padding: .3em;
-    border-style: solid;
-    border-width: .3em;
-    border-color: var(--main-color); 
-}
-
-.meg-collage {
-    display: none;
     width: 100%;
     height: auto;
     max-width: 800px;
@@ -1034,6 +1093,27 @@ iframe {
     height: 40vh;
     transform: rotate(7deg);
     z-index: 999;
+}
+
+@media screen and (max-width:1400px){
+    .goth-meg-img {
+        max-width: 320px;
+    }
+    .transparent-img {
+        max-width: 320px;
+    }
+    .shark-jinx-img {
+        top: -2vh;
+        left: 18vw;
+        max-width: 320px;
+    }
+
+    .me-doodle {
+    top: -15vh;
+    left: 33vw;
+    height: 25vh;
+    transform: rotate(0deg);
+    }
 }
 
 /* mark stuff */
@@ -1149,6 +1229,36 @@ mark.purple {
     background-repeat: no-repeat;
     background-size: 20vh;
     background-position: 68%;
+}
+
+@media  screen and (max-width: 1610px) {
+    .jinxMode #contact {
+        background-position: 72%;
+    }
+}
+
+@media  screen and (max-width: 1450px) {
+    .jinxMode #contact {
+        background-position: 75%;
+    }
+}
+
+@media  screen and (max-width: 1370px) {
+    .jinxMode #contact {
+        background-position: 76%;
+    }
+}
+
+@media  screen and (max-width: 1290px) {
+    .jinxMode #contact {
+        background-position: 78%;
+    }
+}
+
+@media  screen and (max-width: 1030px) {
+    .jinxMode #contact {
+        background-position: 82%;
+    }
 }
 
 .jinxMode .logo-img {
