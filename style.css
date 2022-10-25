@@ -906,11 +906,25 @@ nav{
         font-size: 8vw;
         letter-spacing: 0.1rem;
     }
+    .sound-design-title {
+        font-size: 8vw;
+        letter-spacing: 0.1rem;
+        padding-bottom: 0;
+    }
+    section.between {
+        min-height: 15vh;
+    }
+    section.between-white {
+        min-height: 13vh;
+    }
     body {
         overflow-x: hidden;
     }
     #about {
         padding-top: 0;
+    }
+    .about-title{
+        padding-top: 2vh;
     }
     .nav-links {
         position: absolute;
