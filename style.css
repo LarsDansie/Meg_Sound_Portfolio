@@ -730,6 +730,20 @@ a {
     }
 }
 
+@media screen and (max-width: 370px) {
+    .tree-meg-img {
+        max-width: 335px;
+        margin-left: 6px;
+        margin-right: 0;
+    }
+    .about-list-playing {
+        max-width: 180px;
+    }
+    .about-list-fav {
+        max-width: 180px;
+    }
+}
+
 #contact {
     background-color: var(--white);
     color: var(--black);
@@ -1317,6 +1331,13 @@ mark.purple {
 .jinxMode .main-name {
     font-size: 2.8vw;
     letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .jinxMode .main-name {
+        font-size: 5.5vw;
+        letter-spacing: 0rem;
+    }
 }
 
 .jinxMode .reel-container::after {
