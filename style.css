@@ -1581,8 +1581,9 @@ mark.purple {
 
 @media (max-width: 767px) {
     .icon-btn {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
     }
 }
 
