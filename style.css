@@ -918,6 +918,26 @@ a {
     }
 }
 
+@media screen and (max-width:395px) and (max-height: 855px) {
+    .me-doodle {
+        left: 74vw;
+        top: -6vh;
+        height: 15vh;
+    }
+    .hourglass-2-doodles {
+        top: 36vh;
+    }
+    .star-doodle {
+        top: 106vh;
+    }
+    .pink-x-doodles {
+        top: 138vh;
+    }
+    .blue-x-2-doodles {
+        top: 97vh;
+    }
+}
+
 @media screen and (max-width:375px) and (max-height: 812px) {
     .tree-meg-img {
         max-width: 335px;
@@ -1661,6 +1681,21 @@ iframe {
     }
     .bullets-doodle {
         top: 218vh;
+    }
+}
+
+@media screen and (max-width:395px) and (max-height: 855px) {
+    .blue-cloud-doodle {
+        top: 38vh;
+    }
+    .blue-2-cloud-doodle {
+        top: 132vh;
+    }
+    .bullets-2-doodle {
+        top: 154vh;
+    }
+    .bullets-doodle {
+        top: 202vh;
     }
 }
 
