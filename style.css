@@ -182,16 +182,6 @@ a {
     z-index: 9998;
 }
 
-/* .blue-x-circle-doodle {
-    display: none;
-    position: absolute;
-    top: 8vh;
-    left: 10vw;
-    transform: rotate(20deg);
-    height: auto;
-    width: 12%;
-} */
-
 .pow-pow-doodle {
     display: none;
     position: absolute;
@@ -224,26 +214,6 @@ a {
     transform: rotate(-25deg);
 }
 
-/* .pink-cloud-3-reel {
-    display: none;
-    position: absolute;
-    top: 0vh;
-    left: 25vw;
-    height: auto;
-    width: 6%;
-    transform: rotate(-0deg);
-} */
-
-/* .blue-bullets-crossed {
-    display: none;
-    position: absolute;
-    top: 78vh;
-    left: 88vw;
-    height: auto;
-    width: 10%;
-    transform: rotate(-20deg);
-} */
-
 .blue-cloud-3-doodle {
     display: none;
     position: absolute;
@@ -263,6 +233,30 @@ a {
     color: var(--main-color);
     letter-spacing: .6rem;
 }
+
+@media screen and (max-width:770px) {
+    .jinxmodetext {
+        top: 6vh;
+        left: 9vw;
+        width: 14%;
+    }
+    .pow-pow-doodle {
+        top: 52vh;
+        left: 75vw;
+        width: 25%;
+    }
+    .blue-cloud-3-doodle {
+        top: 52vh;
+        left: 8vw;
+        width: 25%;
+    }
+    .blue-x-circle-doodle {
+        top: 60vh;
+        left: 77vw;
+        width: 20%;
+    }
+}
+
 
 
 
@@ -577,6 +571,11 @@ a {
         max-width: 700px;
         top: -4vh;
     }
+    .me-doodle {
+        top: -24vh;
+        left: 33vw;
+        height: 34vh;
+    }
 }
 
 @media screen and (max-width: 1540px) {
@@ -677,9 +676,10 @@ a {
         margin-right: 30px;
     }
     .jinxMode .goth-meg-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-left: 52px ;
+    }
+    .jinxMode .shark-jinx-img {
+        margin-left: 196px;
     }
     .about-text {
         max-width: 90%;
@@ -696,14 +696,56 @@ a {
     .about-below-text {
         font-size: 1rem;
     }
+    .vi-doodles {
+        width: 25%;
+    }
+    .me-doodle {
+        left: 69vw;
+    }
+    .m-doodle {
+        top: 4vh;
+        left: 59vw;
+        width: 9%;
+    }
+    .star-doodle {
+        top: 102vh;
+        width: 14%;
+    }
+    .pink-x-doodles {
+        top: 90vh;
+        left: 77vw;
+        transform: rotate(25deg);
+        width: 21%;
+    }
+    .blue-x-2-doodles {
+        top: 100vh;
+        left: 1vw;
+        width: 25%;
+        transform: rotate(32deg);
+    }
 }
 
 @media screen and (max-width: 416px) {
+    .about-title {
+        padding-bottom: 5vh;
+    }
     .tree-meg-img {
         max-width: 380px;
         top: 0;
         margin-left: 8px;
         margin-right: 8px;
+    }
+    .jinxMode .goth-meg-img {
+        margin-left: 20px;
+        max-width: 190px;
+        margin-bottom: 3vh;
+        transform: rotate(6deg);
+    }
+    .jinxMode .shark-jinx-img {
+        max-width: 190px;
+        margin-left: 102px;
+        transform: rotate(-9deg);
+        top: 1vh;
     }
     .about-text {
         font-size: 16px;
@@ -728,9 +770,38 @@ a {
         padding-right: 0;
         max-width: 200px;
     }
+    .m-doodle {
+        top: 3vh;
+        left: 61vw;
+    }
+    .me-doodle {
+        left: 70vw;
+        top: -8vh;
+        height: 16vh;
+    }
+    .vi-doodles {
+        width: 41%;
+        top: -8vh;
+        left: -8vw;
+    }
+    .star-doodle {
+        top: 97vh;
+        left: 35vw;
+        width: 24%;
+    }
+    .pink-x-doodles {
+        top: 124vh;
+        z-index: 9991;
+    }
+    .blue-x-2-doodles {
+        top: 93vh;
+        left: 66vw;
+        width: 29%;
+        transform: rotate(-25deg);
+    }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
     .tree-meg-img {
         max-width: 335px;
         margin-left: 6px;
@@ -741,6 +812,62 @@ a {
     }
     .about-list-fav {
         max-width: 180px;
+    }
+    .jinxMode .goth-meg-img {
+        margin-left: 20px;
+        max-width: 180px;
+    }
+    .jinxMode .shark-jinx-img {
+        max-width: 180px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .about-below-text {
+        padding-left: 3px;
+    }
+    .jinxMode .goth-meg-img {
+        margin-left: 17px;
+        max-width: 180px;
+    }
+    .jinxMode .shark-jinx-img {
+        max-width: 180px;
+        margin-left: 71px;
+        transform: rotate(-9deg);
+        top: 1vh;
+    }
+    .me-doodle {
+        top: -11vh;
+        height: 21vh;
+    }
+    .m-doodle {
+        top: 3vh;
+        left: 60vw;
+        width: 10%;
+    }
+    .vi-doodles {
+        width: 37%;
+        top: 5vh;
+        left: 2vw;
+    }
+    .star-doodle {
+        top: 152vh;
+        left: 31vw;
+        width: 28%;
+    }
+    .pink-x-doodles {
+        top: 167vh;
+        left: 69vw;
+        transform: rotate(10deg);
+        width: 29%;
+        z-index: 9991;
+    }
+    .blue-x-2-doodles {
+        top: 120vh;
+        left: 53vw;
+        width: 29%;
+        transform: rotate(-8deg);
     }
 }
 
@@ -783,9 +910,29 @@ a {
         left: 28vw;
     }
 }
+
+@media  screen and (max-width: 1290px) {
+    .blah-2-doodles {
+        left: 26vw;
+    }
+}
+
+@media  screen and (max-width: 1030px) {
+    .blah-2-doodles {
+        left: 20vw;
+        top: 26vh;
+        width: 12%;
+    }
+}
+
 @media screen and (max-width:768px) {
     .contact-text {
         font-size: 2rem;
+    }
+    .blah-2-doodles {
+        left: 12vw;
+        top: 21vh;
+        width: 14%;
     }
 }
 
@@ -1237,6 +1384,12 @@ iframe {
     }
 }
 
+@media screen and (max-width: 770px) {
+    .blue-2-cloud-doodle {
+        top: 142vh;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .vid-1, .vid-2 {
         width: 80vw;
@@ -1404,6 +1557,14 @@ mark.purple {
     }
 }
 
+@media screen and (max-width: 790px) {
+    .jinxMode #contact {
+        background-size: 13vh;
+        background-position: 94%;
+    }
+}
+
+
 .jinxMode .logo-img {
     filter: invert(62%) sepia(68%) saturate(5517%) hue-rotate(309deg) brightness(107%) contrast(104%) grayscale(0%) drop-shadow(2px 2px 8px #FF4F9B);
 }
@@ -1461,12 +1622,12 @@ mark.purple {
     display: block;
 }
 
-@media screen and (max-width:1090px) {
-   .jinxMode #contact {
-    background-position: 80%;
-   }
+@media screen and (max-width: 770px) {
+    .boom-doodle {
+        display: none;
+        top: 20vh;
+    }
 }
-
 
 /* contact btns */
 
