@@ -370,10 +370,10 @@ a {
 .boom-doodle {
     display: none;
     position: absolute;
-    top: 120vh;
-    left: 28vw;
+    top: 125vh;
+    left: 34vw;
     height: auto;
-    width: 20%;
+    width: 15%;
     transform: rotate(10deg)
 }
 
