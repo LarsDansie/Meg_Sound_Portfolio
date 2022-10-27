@@ -563,7 +563,7 @@ a {
     display: flex;
     padding-top: 1rem;
     font-size: 1.3rem;
-    z-index: 100;
+    z-index: 9998;
 }
 
 .about-list-playing {
