@@ -1484,6 +1484,12 @@ nav{
     animation: pulse-1 2.5s infinite;
 }
 
+.bottom-vid {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+}
+
 
 @keyframes pulse-1 {
 	0%,100% {
